@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+.container{
+    background: #eee;
+    min-height: 100vh;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 80px;
+}
+.container .content{
+   
+    flex: 1 1 400px;
+
+}
+.container .img{
+  
+    flex: 1 1 400px;
+}
+.container .img img{
+  width: 100%;
+}
+
+.container .content .title{
+font-size: 48px;
+color: skyblue;
+margin-bottom: 8px;
+
+
+}
+.container .content .title p{
+
+color: #777;
+margin-bottom: 16px;
+padding: 5px;
+}
+
+.container .content .countdown{
+    display: flex;
+    padding: 12px 0;
+    gap: 16px;
+
+
+}
+.container .content .countdown .box{
+ padding: 5px;
+ background: #fff;
+ border-radius: 15px;
+ text-align: center;
+ flex: 1 1 20px;
+ 
+}
+.container .content .countdown .box h1{
+color: red;
+
+}
+.container .content .btn{
+padding: 8px 48px;
+background: #000;
+margin: 10px 0;
+border-radius: 4px;
+display: inline-block;
+color: white;
+transition: .4s ease-in-out;
+
+}
+.container .content .btn:hover{
+letter-spacing: 2px;
+
+}
+
+
+
+
+@media(max-width:500px){
+    .container{
+        padding: 20px;
+    }
+    .container .content{
+        text-align: center;
+    }
+    .container .content .title{
+        font-size: 35px;
+    }
+    .container .content p{
+        font-size: 14px;
+    }
+    .container .content .countdown{
+       gap: 5px; 
+    }
+    .container .content .countdown .box h1{
+        font-size: 28px;
+    }
+    .container .content .countdown .box span{
+        font-size: 13px;
+    }
+}
